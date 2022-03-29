@@ -13,13 +13,13 @@ function themeSwitcher() {
     e.target.classList.toggle('on-click')
 
     if (e.target.classList.contains('on-click')) {
-      body.style.background = '#f3f3f3'
+      body.style.background = '#35352b'
       button.style.background = 'black'
-      h2.style.color = '#3f3f3f'
+      h2.style.color = '#ffff'
       header.style.background = 'black'
       circle.style.background = '#707070'
-      circleOne.style.background = 'black'
-      circleTwo.style.background = 'black'
+      circleOne.style.background = '#070001'
+      circleTwo.style.background = '#070001'
     } else {
       body.style.background = '#bd5067'
       button.style.background = '#662641'

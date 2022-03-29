@@ -18,32 +18,34 @@
 
 body {
   background: var(--color-bg);
+}
+
+.container {
+  position: relative;
   overflow: hidden;
 }
 
 /*  ======== CIRCLE ======== */
 
 .circle-one {
-  overflow: hidden;
   position: absolute;
   background: var(--color-circle);
   z-index: -1;
   left: 5rem;
-  bottom: 30rem;
-  top: -12rem;
+  bottom: 40rem;
+  top: -11rem;
   right: -6rem;
   border-radius: 50%;
 }
 
 .circle-two {
-  overflow: hidden;
   position: absolute;
   background: var(--color-circle);
   z-index: -1;
   bottom: -15rem;
   left: -8rem;
-  right: 5rem;
-  top: 32rem;
+  right: 2rem;
+  top: 44rem;
   border-radius: 50%;
 }
 
