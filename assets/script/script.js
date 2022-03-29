@@ -8,11 +8,15 @@ function themeSwitcher() {
   const header = document.querySelector('header')
   const circleOne = document.querySelector('.circle-one')
   const circleTwo = document.querySelector('.circle-two')
+  const buttonClose = document.querySelector('#close-modal')
+  const buttonReset = document.querySelector('#reset-site')
 
   circle.addEventListener('click', e => {
     e.target.classList.toggle('on-click')
 
     if (e.target.classList.contains('on-click')) {
+      buttonReset.style.background = '#070001'
+      buttonClose.style.background = '#070001'
       body.style.background = '#35352b'
       button.style.background = 'black'
       h2.style.color = '#ffff'
@@ -67,9 +71,13 @@ receiveValueInputAndCalc = () => {
     const valueHeight = height.value
 
     const result = valueWeight / valueHeight ** 2
-    finishedResult = result.toFixed(2)
 
-    if (finishedResult < 18.5) {
+    console.log(result)
+    finishedResult = result.toFixed(2)
+    if (finishedResult < 1) {
+      alert('Preencha com numeros ( Não se esqueça da virgula na altura )')
+      return
+    } else if (finishedResult < 18.5) {
       ;(textPrince.innerHTML = `Seu IMC é ${finishedResult}`),
         (textSecondary.innerHTML = '(Abaixo do peso)')
     } else if (finishedResult >= 18.5 && finishedResult <= 24.9) {
