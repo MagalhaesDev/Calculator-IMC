@@ -32,6 +32,8 @@ function themeSwitcher() {
       circle.style.background = '#bd5067'
       circleOne.style.background = '#66264171'
       circleTwo.style.background = '#66264171'
+      buttonReset.style.background = '#195319'
+      buttonClose.style.background = '#992929'
     }
   })
 }
