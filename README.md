@@ -22,7 +22,7 @@ Here are the technologies used in this project.
 
 ### 1 - This is the main page of the project <3 .
 
-![Homepage image](https://github.com/MagalhaesDev/Calculator-IMC/blob/main/readme/img-main.png)
+![Homepage image](https://github.com/MagalhaesDev/Calculator-IMC/blob/main/public/readme/img-main.png)
 
 ### 2 - We have a button to change the colors of the site for the dark theme 
 
@@ -30,11 +30,11 @@ Here are the technologies used in this project.
 
 ### 3 - Another button in the upper right corner which shows the BMI table.
 
-![Information](https://github.com/MagalhaesDev/Calculator-IMC/blob/main/readme/instruction.png)
+![Information](https://github.com/MagalhaesDev/Calculator-IMC/blob/main/public/readme/instruction.png)
 
 ### 4 - After entering the weight and height values and clicking the calculate button this is the result.
 
-![Result](https://github.com/MagalhaesDev/Calculator-IMC/blob/main/readme/result-finished.png)
+![Result](https://github.com/MagalhaesDev/Calculator-IMC/blob/main/public/readme/result-finished.png)
 
 ## Features
 
