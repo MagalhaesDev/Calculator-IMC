@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/*  ======== RESET ALL ======== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --color-bg: #bd5067;
+  --color-secondary: #662641;
+  --color-circle: #66264171;
+  --color-text: #e2e2e2;
+}
+
+body {
+  background: var(--color-bg);
+  overflow: hidden;
+}
+
+/*  ======== CIRCLE ======== */
+
+.circle-one {
+  overflow: hidden;
+  position: absolute;
+  background: var(--color-circle);
+  z-index: -1;
+  left: 5rem;
+  bottom: 30rem;
+  top: -12rem;
+  right: -6rem;
+  border-radius: 50%;
+}
+
+.circle-two {
+  overflow: hidden;
+  position: absolute;
+  background: var(--color-circle);
+  z-index: -1;
+  bottom: -15rem;
+  left: -8rem;
+  right: 5rem;
+  top: 32rem;
+  border-radius: 50%;
+}
+
+/*  ======== HEADER ======== */
+
+.content-box-brightness {
+  position: relative;
+  width: 3.5rem;
+  height: 2.1rem;
+  border-radius: 1.3rem;
+  background: var(--color-text);
+}
+
+.content-box-brightness .circle {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 35%;
+  left: 0;
+  bottom: 0;
+  border-radius: 1.3rem;
+  background-color: var(--color-bg);
+  transition: all 0.3s;
+}
+
+.content-box-brightness .circle.on-click {
+  right: 0;
+  left: 35%;
+}
+
+header {
+  width: 100%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-secondary);
+  height: 3.8rem;
+}
+
+header h1 {
+  margin-left: -2rem;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--color-text);
+}
+
+header p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+/*  ======== INFORMATION ======== */
+
+.interrogation {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.7rem;
+  background-color: var(--color-text);
+  border-radius: 0.4rem 0 0.4rem 0.4rem;
+  display: none;
+}
+
+.interrogation table td {
+  padding: 0.5rem;
+}
+
+.interrogation table thead {
+  background: #dddddd;
+  border-radius: 0.4rem;
+}
+
+.interrogation table tbody {
+  background: #bdbdbd;
+  text-align: center;
+}
+
+.interrogation.on-interrogation {
+  display: block;
+}
+
+/*  ======== MODAL ======== */
+
+.modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.384);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.modal .result-calc {
+  width: 25rem;
+  height: 10rem;
+  background: var(--color-text);
+  border-radius: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.modal #result-msg {
+  text-align: center;
+}
+
+.modal #result-msg h2 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.modal #result-buttons button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  border: none;
+  color: rgb(255, 254, 254);
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.modal #result-buttons button:first-child {
+  background-color: rgb(153, 41, 41);
+}
+
+.modal #result-buttons button:first-child:hover {
+  filter: brightness(90%);
+}
+
+.modal #result-buttons button:last-child {
+  background-color: rgb(25, 83, 25);
+}
+
+.modal #result-buttons button:last-child:hover {
+  filter: brightness(90%);
+}
+
+.modal.open {
+  visibility: visible;
+}
+
+/*  ======== MAIN ======== */
+
+main {
+  min-height: calc(100vh - 3.8rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  max-width: 20rem;
+}
+
+.form-container h2 {
+  font-size: 1rem;
+  color: var(--color-text);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+}
+
+form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  outline: 0;
+  border: none;
+  border-radius: 0.4rem;
+  box-shadow: rgba(36, 36, 36, 0.514) 0.1rem 0.5rem 1rem 0.5rem;
+}
+
+form input#calc {
+  background: var(--color-secondary);
+  color: white;
+  padding: 0.65rem;
+  width: 50%;
+  align-self: center;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.3s;
+  letter-spacing: -0.02rem;
+  box-shadow: rgba(36, 36, 36, 0.514) 0.3rem 0.1rem 1rem 0.3rem;
+}
+
+form input#calc:hover {
+  filter: brightness(80%);
+}
+
+@media (min-width: 600px) {
+  .circle-one {
+    left: 40rem;
+    bottom: 25rem;
+    top: -30rem;
+    right: -20rem;
+  }
+  .circle-two {
+    right: 40rem;
+    left: -30rem;
+    top: 25rem;
+    bottom: -30rem;
+  }
+}
