@@ -9,9 +9,9 @@ A website of a calculator with some features, the main one being the calculation
 
 Here are the technologies used in this project.
 
-* Javascript
-* CSS
-* HTML
+* Javascript.
+* CSS.
+* HTML.
 
 ## Services Used
 
